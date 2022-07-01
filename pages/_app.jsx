@@ -1,11 +1,9 @@
-import '../styles/globals.css'
+import '../styles/globals.css';
 import PropTypes from 'prop-types';
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+const MyApp = ({ Component, pageProps }) => <Component {...pageProps} />;
 MyApp.propTypes = {
   Component: PropTypes.element.isRequired,
   pageProps: PropTypes.element.isRequired,
-}
-export default MyApp
+};
+export default MyApp;
